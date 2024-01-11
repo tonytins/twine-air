@@ -6,14 +6,17 @@
     "distDir": "../dist/web"
   },
   "package": {
-    "productName": "Twine",
-    "version": "2.8.200"
+    "productName": "Khipu",
+    "version": "0.1.100"
   },
   "tauri": {
     "allowlist": {
       "all": false,
       "fs": {
-        "writeFile": true
+        "all": true
+      },
+      "path": {
+        "all": true
       },
       "shell": {
         "execute": true
@@ -37,7 +40,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tonybark.twine",
+      "identifier": "com.tonybark.khipu",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -65,7 +68,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "Twine Air",
+        "title": "Khipu",
         "minWidth": 800,
         "minHeight": 600
       }

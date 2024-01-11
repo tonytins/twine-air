@@ -1,6 +1,10 @@
-## Twine Air
+## Khipu
 
-Twine Air (working title) is an experimental port of Twine, a tool for telling interactive, nonlinear stories, to Tauri from Electron. It is intended as a soft fork and backwards-compatible with the latest stable releases.
+Named after [recording devices](https://en.wikipedia.org/wiki/Quipu) fashioned from strings, Khipu is an experimental port of Twine, a tool for telling interactive, nonlinear stories, to Tauri from Electron. It is intended as a soft fork that is backwards-compatible with the latest stable releases.
+
+### KNOWN ISSUES
+
+- In-app (for lack of a better word) debugging, exporting files and hyperlinks doesn't work.
 
 ### SYNOPSIS
 
@@ -14,7 +18,7 @@ repositories:
 
 #### BUILDS
 
-Binary packages for Twine are available on the [Releases](https://github.com/tonytins/twine-air/releases) tab for Windows, MacOS
+Binary packages for Twine are available on the [Releases](https://github.com/tonytins/Khipu/releases) tab for Windows, MacOS
 and Linux. As always, only install from sources you trust.
 
 ### INSTALL
@@ -31,7 +35,7 @@ your operating system's package manager.
 Run `npm start` to begin serving a development version of Twine locally. This
 server will automatically update with changes you make.
 
-Run `npm run start:tauri` to run a development version of the Electron app. **Running this can damage files in your Twine storied folder. Take a backup copy of this folder before proceeding.** Most of the app will automatically update as you work, but if you want the app to read story files initially again, you will need to restart the process.
+Run `npm run start:tauri` to run a development version of the Tauri app. **Running this can damage files in your Twine storied folder. Take a backup copy of this folder before proceeding.** Most of the app will automatically update as you work, but if you want the app to read story files initially again, you will need to restart the process.
 
 To create a release, run `npm run build:tauri`. Finished files will be found under `src-tauri/target`.
 
